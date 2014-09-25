@@ -1,0 +1,51 @@
+/*********************************************************************
+INTERFACE
+
+Author : Jonathan Parrilla
+Course : COP 3804 Days and Time
+Professor : Michael Robinson
+Program # : Program Purpose/Description
+Purpose of this program is to implent classes using:
+- Polymorphism
+- Inheritance
+- Interfaces
+- Abstract classes, methods, variables
+- Classes inside classes
+Due Date : 10/31/2012
+Certification:
+I hereby certify that this work is my own and none of it is the work of any other person.
+
+
+
+..........{ your signature }..........
+*********************************************************************/
+
+public interface customerInterface 
+{
+	public String customerType = "I am the interface";
+	public String customerID = "";
+	public String customerLastName = "";
+	public String customerFirstName = "";
+	public String customerMiddleName = "";
+	public String customerAddress1 = "";
+	public String customerAddress2 = "";
+	public String customerCity = "";
+	public String customerState = "";
+	public String customerCountry = "";
+	public String customerZipCode = "";
+	public String customerTelNumber = "";
+	
+	public void setCustomerType( String customerType );
+	public void setCustomerID( String customerID );
+	public void setCustomerLastName( String customerLastName );
+	public void setCustomerFirstName( String customerFirstName );
+	public void setCustomerMiddleName( String customerMiddleName );
+	public void setCustomerAddress1( String customerAddress1 );
+	public void setCustomerAddress2( String customerAddress2 );
+	public void setCustomerCity( String customerCity );
+	public void setCustomerState( String customerState );
+	public void setCustomerCountry( String customerCountryName );
+	public void setCustomerZipCode( String customerZipCode );
+	public void setCustomerTelNumber( String customerTelNumber );
+
+}

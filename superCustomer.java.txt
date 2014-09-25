@@ -1,0 +1,107 @@
+/*********************************************************************
+SUPERCLASS superCustomer
+
+Author : Jonathan Parrilla
+Course : COP 3804 Days and Time
+Professor : Michael Robinson
+Program # : Program Purpose/Description
+Purpose of this program is to implent classes using:
+- Polymorphism
+- Inheritance
+- Interfaces
+- Abstract classes, methods, variables
+- Classes inside classes
+Due Date : 10/31/2012
+Certification:
+I hereby certify that this work is my own and none of it is the work of any other person.
+
+..........{ your signature }..........
+*********************************************************************/
+
+public class superCustomer implements customerInterface
+{
+	//Manually Implementing the interface variables
+	public String customerType = "I am the SuperCustomer";
+	public String customerID = "3767284";
+	public String customerLastName = "Parrilla";
+	public String customerFirstName = "Jonathan";
+	public String customerMiddleName = "Alfonso";
+	public String customerAddress1 = "10637 Hammocks Blvd.";
+	public String customerAddress2 = "Apt 918";
+	public String customerCity = "Miami";
+	public String customerState = "Florida";
+	public String customerCountry = "United States of America";
+	public String customerZipCode = "33196";
+	public String customerTelNumber = "3055823112";
+	
+	//Implementation Methods
+	public void setCustomerType( String customerType )
+	{
+		this.customerType = customerType;
+	}
+	
+	public void setCustomerID( String customerID )
+	{
+		this.customerID = customerID;
+	}
+	
+	public void setCustomerLastName( String customerLastName )
+	{
+		this.customerLastName = customerLastName;
+	}
+	
+	public void setCustomerFirstName( String customerFirstName )
+	{
+		this.customerFirstName = customerFirstName;
+	}
+	
+	public void setCustomerMiddleName( String customerMiddleName )
+	{
+		this.customerMiddleName = customerMiddleName;
+	}
+	
+	public void setCustomerAddress1( String customerAddress1 )
+	{
+		this.customerAddress1 = customerAddress1;
+	}
+	
+	public void setCustomerAddress2( String customerAddress2 )
+	{
+		this.customerAddress2 = customerAddress2;
+	}
+	
+	public void setCustomerCity( String customerCity )
+	{
+		this.customerCity = customerCity;
+	}
+	
+	public void setCustomerState( String customerState )
+	{
+		this.customerState = customerState;
+	}
+	
+	public void setCustomerCountry( String customerCountry)
+	{
+		this.customerCountry = customerCountry;
+	}
+	
+	public void setCustomerZipCode( String customerZipCode )
+	{
+		this.customerZipCode = customerZipCode;
+	}
+	
+	public void setCustomerTelNumber( String customerTelNumber )
+	{
+		this.customerTelNumber = customerTelNumber;
+	}
+	
+	//Interface Variable Arrays Method
+	public Object[] getCustomerData()
+	{
+		Object customerData[] = {customerType, customerID, 
+		customerLastName, customerFirstName, customerMiddleName, 					customerAddress1, customerAddress2, customerCity, 						customerState, customerCountry, customerZipCode,customerTelNumber};
+		
+		return customerData;
+	}
+
+}

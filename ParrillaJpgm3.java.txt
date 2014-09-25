@@ -1,0 +1,129 @@
+/*********************************************************************
+MAIN PROGRAM
+
+Author : Jonathan Parrilla
+Course : COP 3804 Days and Time
+Professor : Michael Robinson
+Program # : Program Purpose/Description
+Purpose of this program is to implent classes using:
+- Polymorphism
+- Inheritance
+- Interfaces
+- Abstract classes, methods, variables
+- Classes inside classes
+Due Date : 10/31/2012
+Certification:
+I hereby certify that this work is my own and none of it is the work of any other person.
+
+
+
+..........{ your signature }..........
+*********************************************************************/
+
+public class ParrillaJPgm3 
+{
+	//Divider Method
+	public static void div()
+	{
+		System.out.println();
+		System.out.println("----------------------------------------------------						--");
+		System.out.println();
+	}
+	
+	//Print a line Method
+	public static void pl()
+	{
+		System.out.println();
+	}
+	
+	//usingInterface Method
+	public static void usingInterface()
+	{
+		superCustomer rCust = new retailCustomer();
+		
+		for(Object temp: rCust.getCustomerData())
+		{
+			System.out.println(temp);
+		}
+	}
+	
+	//usingAbstractClass Method
+	public static void usingAbstractClass()
+	{
+		//Calling regular methods from abstractClass
+		abstractClass.methodOne();
+		pl();
+		abstractClass.methodTwo();
+		pl();
+		
+		//Creating object from the class that inherits from abstractClass
+		extendsAbstractClass AnObject = new extendsAbstractClass();
+		
+		//Calling all methods object has access to
+		AnObject.hello();
+		pl();
+		AnObject.methodOne();
+		pl();
+		AnObject.methodTwo();
+		
+	}
+	
+	
+	//Main Method
+	public static void main(String arg[]) throws InterruptedException
+	{
+		usingInterface();
+		div();
+		usingAbstractClass();
+		div();
+		
+	}
+
+}//End of class ParrillaJPgm3
+
+
+//abstractClass -  a Class within a class(ParrillaJPgm3)
+//abstractClass is also a Super Class
+abstract class abstractClass
+{
+	//Abstract method - Does Nothing
+	abstract void hello();
+	
+	//MethodOne - It identifies itself
+	public static void methodOne()
+	{
+	System.out.println( "I am methodOne, regular method in the abstractClass" );
+	}
+	
+	//MethodTwo - It identifies itself
+	public static void methodTwo()
+	{
+	System.out.println( "I am methodTwo, regular method in the abstractClass" );
+	}
+
+}//End of Abstract Class abstractClass
+
+//extendsAbstractClass - a sub class of a class within a class(abstractClass)
+class extendsAbstractClass extends abstractClass
+{
+	//abstract method hello() implementation
+	public void hello()
+	{
+		System.out.println("I am the implementation of the abstract method 						'hello();'");
+	}
+	
+	
+	//MethodOne - It identifies itself 
+	//overrides MethodOne from abstractClass
+	public static void methodOne()
+	{
+		System.out.println( "I am methodOne, a method in the 								extendsAbstractClass" );
+	}
+	
+	//MethodTwo - It identifies itself 
+	//overrides MethodTwo from abstractClass
+	public static void methodTwo()
+	{
+		System.out.println( "I am methodTwo, a method in the 								extendsAbstractClass" );
+	}
+}//End of class extendsAbstractClass

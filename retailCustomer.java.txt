@@ -1,0 +1,27 @@
+/*********************************************************************
+SUBCLASS retailCustomer
+
+Author : Jonathan Parrilla
+Course : COP 3804 Days and Time
+Professor : Michael Robinson
+Program # : Program Purpose/Description
+Purpose of this program is to implent classes using:
+- Polymorphism
+- Inheritance
+- Interfaces
+- Abstract classes, methods, variables
+- Classes inside classes
+Due Date : 10/31/2012
+Certification:
+I hereby certify that this work is my own and none of it is the work of any other person.
+
+
+
+..........{ your signature }..........
+*********************************************************************/
+
+public class retailCustomer extends superCustomer
+{
+	public String customerType = "I am the retailCustomer";
+
+}
